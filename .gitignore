@@ -1,0 +1,17 @@
+# Compiled executables
+*.out
+
+# Input/Output files
+input.txt
+output.txt
+
+# Common build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.*~
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
