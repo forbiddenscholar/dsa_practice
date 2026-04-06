@@ -5,10 +5,8 @@ vector <int> dijkstra (int V, vector<vector<int>> adj[], int S){
 
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
-    vector <int> dist(V);
-    // set initial distance to infinity
-    for(int i=0; i<V; i++) dist[i] = 1e9;
-    dist[S] = 0;
+    vector <int> dist(V, 1e9); // set initial distance to infinity
+    dist[S] = 0; // dist from source to source is 0
     pq.push({0, S});
 
     while(!pq.empty()){
@@ -42,7 +40,7 @@ int main(){
         cin >> u >> v >> w;
 
         adj[u].push_back({v, w});
-        adj[v].push_back({u, w});
+        adj[v].push_back({u, w}); //  will remove this if directed graph
     }
 
     int S;
