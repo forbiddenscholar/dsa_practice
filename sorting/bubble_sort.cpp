@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// bubble sort is O(N)
+
 void bubble_sort(int arr[], int n){
     bool swapped;
 

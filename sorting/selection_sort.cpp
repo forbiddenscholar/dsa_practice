@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// selection sort is O(N2)
+
 void selection_sort(int arr[], int n){
     for(int i=0; i<n-1; i++){
         int min_idx = i;
